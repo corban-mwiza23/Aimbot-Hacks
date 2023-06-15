@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Currency Exchange</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>XYZ-COMPANY</h1>
+    <h3>CURRENCY EXCHANGE PLATFORM</h3>
+  <div class="container">
+    <div class="main">
+        <div>
+            <label for="number">Amount</label><br>
+            <input type="number" id="usd-input">  
+        </div>
+        <div>
+            <label>From:</label><br>
+            <input type="text" id="from" disabled value="USD-$">    
+        </div>
+        <div>
+            <label>To:</label><br>
+            <input type="text" id="to" disabled value="Rwanda-RWF">    
+        </div>
+    </div>
+    <div style="display: flex; width: 400px">
+        <div style="width: 200px;">
+            <button onclick="convertCurrency()" class="convert">Convert</button>  
+        </div>
+        <div class="result">
+            <label>Result</label><br>
+            <p id="result"></p>            
+        </div>
+    </div> 
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
